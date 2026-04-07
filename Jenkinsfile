@@ -21,7 +21,7 @@ pipeline {
                 bat '''
                     python -m venv venv
                     call venv\\Scripts\\activate.bat
-                    pip install -r requirements.txt
+                    python -m pip install -r requirements.txt
                 '''
             }
         }
