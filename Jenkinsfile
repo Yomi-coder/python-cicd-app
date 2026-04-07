@@ -19,9 +19,9 @@ pipeline {
             steps {
                 echo "Installing Python dependencies..."
                 bat '''
-                    python -m venv venv
+                    "C:\\Users\\admin\\AppData\\Local\\Python\\bin\\python.exe" -m venv venv
                     call venv\\Scripts\\activate.bat
-                    python -m pip install -r requirements.txt
+                    "C:\\Users\\admin\\AppData\\Local\\Python\\bin\\python.exe" -m pip install -r requirements.txt
                 '''
             }
         }
